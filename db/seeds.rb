@@ -2,9 +2,9 @@
 # car1.image.attach(io: File.open(Rails.root.join('app', 'assets', 'images','murple_logo.png')), filename: 'murple_logo.png')
 # IMAGE = Rails.root.join('app', 'assets', 'images', 'murple_logo.png')
 # Create Users
-admin1 = User.create(username: 'ahroniyA')
-admin2 = User.create(username: 'salwaB')
-admin3 = User.create(username: 'talhaM')
+admin1 = User.create(username: 'admin')
+admin2 = User.create(username: 'admin2')
+admin3 = User.create(username: 'admin3')
 
 # Create Cars
 car1 = admin1.cars.create(

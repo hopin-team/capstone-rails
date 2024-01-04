@@ -36,3 +36,5 @@
 /node_modules
 
 .ahr
+
+db/*.sqlite3
