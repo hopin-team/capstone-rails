@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect, ChangeEvent} from "react";
 
 const AddCar = () => {
   const [carData, setCarData] = useState({
@@ -30,14 +30,14 @@ const AddCar = () => {
     fetchCurrentUser();
   }, []);
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setCarData({
       ...carData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     try {
@@ -50,7 +50,7 @@ const AddCar = () => {
       });
 
       if (response.ok) {
-        const newCar = await response.json();
+        await response.json();
 
         setCarData({
           name: "",

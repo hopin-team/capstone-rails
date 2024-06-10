@@ -26,6 +26,7 @@
     "stylelint": "^15.7.0",
     "stylelint-config-standard": "^33.0.0",
     "stylelint-csstree-validator": "^2.1.0",
-    "stylelint-scss": "^5.0.1"
+    "stylelint-scss": "^5.0.1",
+    "typescript": "^5.4.5"
   }
 }
