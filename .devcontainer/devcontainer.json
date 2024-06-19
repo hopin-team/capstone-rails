@@ -1,0 +1,22 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vsliveshare.vsliveshare"
+      ]
+    }
+  },
+  "postCreateCommand": ".devcontainer/boot.sh",
+  "portsAttributes": {
+    "3000": {
+      "label": "server"
+    },
+    "5991": {
+      "label": "live-share"
+    }
+  },
+  "forwardPorts": [3000, 5991]
+}
