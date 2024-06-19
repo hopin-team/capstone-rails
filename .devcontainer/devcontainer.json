@@ -3,6 +3,11 @@
   "features": {
   },
   "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "app/javascript/components/fragments/navigation/AddCar.jsx"
+      ]
+    },
     "vscode": {
       "extensions": [
         "ms-vsliveshare.vsliveshare"
