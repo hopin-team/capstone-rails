@@ -12,7 +12,8 @@
   "postCreateCommand": ".devcontainer/boot.sh",
   "portsAttributes": {
     "3000": {
-      "label": "server"
+      "label": "server",
+      "onAutoForward": "openPreview"
     },
     "5991": {
       "label": "live-share"
