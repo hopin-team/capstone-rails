@@ -61,13 +61,16 @@ Reservation.create!(
   car_id: car3.id
 )
 
-admin2.cars.create(
-  name: 'PhotoTest',
-  model: 'benz',
-  description: 'A luxury car with impressive performance.',
-  price: 250.5,
-  photo: 'https://ik.imagekit.io/ahroniy/mercedies.jpg?updatedAt=1686688717606'
-)
+CAR_COUNT = 200
+CAR_COUNT.times do |_car_count|
+  admin2.cars.create(
+    name: Faker::Vehicle.make,
+    model: Faker::Vehicle.model,
+    description: Faker::Vehicle.drive_type,
+    price: rand(100..1000),
+    photo: Faker::Avatar.image
+  )
+end
 
 Car.create(
   name: 'PhotoTest',
